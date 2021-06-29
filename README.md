@@ -23,3 +23,25 @@ Luego abrir una nueva consola de comandos y moverse a la carpeta source/app en l
 npm install
 npm run dev
 ```
+
+Conectar con metamask:
+
+- Abrir metamask en el navegador
+
+  ![](imagenes/Conectar_MetaMask_1.png)
+
+- Clic en el dropdown para elegir la red
+
+- Clic en Custom RPC
+
+  ![](imagenes/Conectar_MetaMask_2.png)
+
+- Ingresar los siguientes datos:
+
+  - Network Name: Truffle
+  - New RPC URL: http://127.0.0.1:8545/
+  - Chain ID: 5777
+
+- Elegir la cuenta y presionar Connect
+
+  
