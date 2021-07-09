@@ -28,12 +28,8 @@ class ViewLogin extends connect(CrcaStaticStore.store)(PageViewElement) {
           background-color: rgb(19, 114, 184);
           width: 100%;
         }
-        form {
-          display: flex;
-          flex-direction: column;
-          margin-top: 50px;
-          align-items: center;
-          justify-content: center;
+        h1 {
+          text-align: center;
         }
         header {
           display: flex;

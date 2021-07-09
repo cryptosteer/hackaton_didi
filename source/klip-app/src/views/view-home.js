@@ -1,12 +1,16 @@
-import { LitElement, html, css } from 'lit-element';
+import { html, css } from 'lit-element';
+import { PageViewElement } from './page-view-element';
 
-class ViewHome extends LitElement {
+class ViewHome extends PageViewElement {
   static get styles() {
-    return css`
-      :host {
-        display: block;
-      }
-    `;
+    return [
+      ...super.styles,
+      css`
+        :host {
+          display: block;
+        }
+      `,
+    ];
   }
 
   static get properties() {
@@ -18,7 +22,7 @@ class ViewHome extends LitElement {
   }
 
   render() {
-    return html` <h1>Listado de Proyectos</h1> `;
+    return html` <h1>Proyectos</h1> `;
   }
 }
 
