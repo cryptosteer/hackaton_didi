@@ -21,7 +21,7 @@ import {
   updateAccounts,
 } from './redux/actions/app-actions.js';
 import { user } from './redux/reducers/user-reducer.js';
-import { PAGE_DIRECTUS } from './config/page';
+import { PAGE_DIRECTUS, PAGE_METACOIN } from './config/page';
 import {
   loggedInSelector,
   web3SuccessSelector,
@@ -134,6 +134,10 @@ export class KlipApp extends connect(CrcaStaticStore.store)(LitElement) {
               name="${PAGE_DIRECTUS}"
               ?active=${this._page === PAGE_DIRECTUS}
             ></view-directus>
+            <view-metacoin
+              name="${PAGE_METACOIN}"
+              ?active=${this._page === PAGE_METACOIN}
+            ></view-metacoin>
             <view-404
               name="${CRCA_URL_PAGE_404}"
               ?active=${this._page === CRCA_URL_PAGE_404}
@@ -161,6 +165,10 @@ export class KlipApp extends connect(CrcaStaticStore.store)(LitElement) {
             >Administración</a
           >
           <mwc-icon slot="graphic">admin_panel_settings</mwc-icon>
+        </mwc-list-item>
+        <mwc-list-item ?activated=${this.page === PAGE_METACOIN} graphic="icon">
+          <a href="${PAGE_METACOIN}" @click=${this.toggleDrawer}>MetaCoin</a>
+          <mwc-icon slot="graphic">credit_card</mwc-icon>
         </mwc-list-item>
       </mwc-list>
     `;

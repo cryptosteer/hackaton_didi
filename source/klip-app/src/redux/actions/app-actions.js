@@ -16,7 +16,7 @@ import {
 
 import { userSelector } from '../selectors/user-selectors.js';
 import { TAG_LOAD_PAGE } from '../../config/processTag.js';
-import { PAGE_DIRECTUS } from '../../config/page.js';
+import { PAGE_DIRECTUS, PAGE_METACOIN } from '../../config/page.js';
 import { loggedInSelector } from '../selectors/app-selectors.js';
 import { FIRST_PAGE } from '../../config/config.js';
 import { refreshBalance } from './metaCoin-actions.js';
@@ -113,6 +113,22 @@ export const loadPage = page => (dispatch, getState) => {
     case PAGE_DIRECTUS:
       if (loggedIn) {
         import('../../views/view-directus.js')
+          .then(() => dispatch(stopPageLoading(tag)))
+          .catch(e => {
+            dispatch(loadPage(CRCA_URL_PAGE_404));
+            dispatch(stopPageLoading(tag));
+            console.log(e);
+            // processError(tag, e, infoError, dispatch, CRCA_LOADING_TYPE_PAGE);
+          });
+      } else {
+        dispatch(stopPageLoading(tag));
+        dispatch(loadPage(CRCA_URL_PAGE_LOGIN));
+        return;
+      }
+      break;
+    case PAGE_METACOIN:
+      if (loggedIn) {
+        import('../../views/view-metacoin.js')
           .then(() => dispatch(stopPageLoading(tag)))
           .catch(e => {
             dispatch(loadPage(CRCA_URL_PAGE_404));

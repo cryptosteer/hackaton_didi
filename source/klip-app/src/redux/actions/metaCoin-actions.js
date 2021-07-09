@@ -1,4 +1,7 @@
-import { accountActivaSelector } from '../selectors/app-selectors';
+import {
+  accountActivaSelector,
+  web3SuccessSelector,
+} from '../selectors/app-selectors';
 
 export const SET_BALANCE = 'SET_BALANCE';
 
@@ -9,6 +12,12 @@ export const setBalance = balance => ({
 
 export const refreshBalance = () => (dispatch, getState) => {
   const state = getState();
+  const web3Success = web3SuccessSelector(state);
+
+  if (!web3Success || window.App.meta === null) {
+    return;
+  }
+
   const account = accountActivaSelector(state);
   const { getBalance } = window.App.meta.methods;
 
