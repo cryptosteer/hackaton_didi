@@ -65,7 +65,7 @@ export const userConnect = () => (dispatch, getState) => {
   const web3Success = web3SuccessSelector(state);
   if (web3Success) {
     window.ethereum
-      .send('eth_requestAccounts')
+      .request({ method: 'eth_requestAccounts' })
       .then(e => {
         dispatch(updateAccounts(e.result));
       })
