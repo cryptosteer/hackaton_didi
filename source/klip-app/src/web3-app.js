@@ -25,19 +25,6 @@ const App = {
     }
   },
 
-  sendCoin: async function () {
-    const amount = parseInt(document.getElementById('amount').value);
-    const receiver = document.getElementById('receiver').value;
-
-    this.setStatus('Initiating transaction... (please wait)');
-
-    const { sendCoin } = this.meta.methods;
-    await sendCoin(receiver, amount).send({ from: this.account });
-
-    this.setStatus('Transaction complete!');
-    this.refreshBalance();
-  },
-
   setStatus: function (message) {
     const status = document.getElementById('status');
     status.innerHTML = message;
