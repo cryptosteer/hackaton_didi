@@ -44,7 +44,7 @@ export const updateAccounts = accounts => (dispatch, getState) => {
 
   dispatch(setAccounts(accounts));
 
-  const account = accounts.length ? accounts[0] : null;
+  const account = accounts && accounts.length ? accounts[0] : null;
   dispatch(updateAccountActiva(account));
 
   if (account !== null && !loggedIn) {

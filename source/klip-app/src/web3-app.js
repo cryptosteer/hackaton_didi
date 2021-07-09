@@ -25,14 +25,6 @@ const App = {
     }
   },
 
-  refreshBalance: async function () {
-    const { getBalance } = this.meta.methods;
-    const balance = await getBalance(this.account).call();
-
-    const balanceElement = document.getElementsByClassName('balance')[0];
-    balanceElement.innerHTML = balance;
-  },
-
   sendCoin: async function () {
     const amount = parseInt(document.getElementById('amount').value);
     const receiver = document.getElementById('receiver').value;
@@ -72,5 +64,5 @@ window.addEventListener('load', function () {
     CrcaStaticStore.store.dispatch(web3Success());
   }
 
-  // App.start();
+  App.start();
 });
