@@ -48,6 +48,8 @@ export const updateAccounts = accounts => (dispatch, getState) => {
     const lastPage = crcaUrlLastPageSelector(state);
     const pg = lastPage !== null ? lastPage : FIRST_PAGE;
     dispatch(crcaUrlNavigate(pg));
+  } else if (account === null && loggedIn) {
+    dispatch(crcaUrlNavigate(CRCA_URL_PAGE_LOGIN));
   }
 };
 
