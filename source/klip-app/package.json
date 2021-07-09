@@ -1,0 +1,82 @@
+{
+  "devDependencies": {
+    "@open-wc/building-rollup": "^1.10.0",
+    "@open-wc/eslint-config": "^0.3.12",
+    "@open-wc/testing": "^2.5.33",
+    "@rollup/plugin-json": "^4.1.0",
+    "@web/dev-server": "^0.1.18",
+    "@web/dev-server-rollup": "^0.3.5",
+    "@web/test-runner": "^0.12.20",
+    "deepmerge": "^4.2.2",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^7.2.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.52.8",
+    "rollup-plugin-copy-assets": "^2.0.3"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.html . --ignore-path .gitignore && prettier \"**/*.js\" --check --ignore-path .gitignore",
+    "format": "eslint --ext .js,.html . --fix --ignore-path .gitignore && prettier \"**/*.js\" --write --ignore-path .gitignore",
+    "test": "web-test-runner --coverage",
+    "test:watch": "web-test-runner --watch",
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "start:build": "npm run build && web-dev-server --root-dir dist --app-index index.html --open --compatibility none",
+    "start": "web-dev-server"
+  },
+  "name": "klip-app",
+  "version": "0.0.0",
+  "description": "Webcomponent klip-app following open-wc recommendations",
+  "author": "klip-app",
+  "license": "MIT",
+  "dependencies": {
+    "@ascenso/crca-redux-feedback": "^0.3.0",
+    "@ascenso/crca-redux-loading": "^0.7.1",
+    "@ascenso/crca-redux-store": "^1.1.2",
+    "@ascenso/crca-redux-url-parser": "^0.12.2",
+    "@ascenso/crca-utils": "^0.6.13",
+    "@dile/dile-pages": "^1.0.0",
+    "@material/mwc-button": "^0.21.0",
+    "@material/mwc-checkbox": "^0.21.0",
+    "@material/mwc-drawer": "^0.21.0",
+    "@material/mwc-fab": "^0.21.0",
+    "@material/mwc-formfield": "^0.21.0",
+    "@material/mwc-icon-button": "^0.21.0",
+    "@material/mwc-list": "^0.21.0",
+    "@material/mwc-menu": "^0.21.0",
+    "@material/mwc-radio": "^0.21.0",
+    "@material/mwc-select": "^0.21.0",
+    "@material/mwc-switch": "^0.21.0",
+    "@material/mwc-textarea": "^0.21.0",
+    "@material/mwc-textfield": "^0.21.0",
+    "@material/mwc-top-app-bar-fixed": "^0.21.0",
+    "@webcomponents/webcomponentsjs": "^2.5.0",
+    "lit-element": "^2.5.1",
+    "lit-html": "^1.4.1",
+    "pwa-helpers": "^0.9.1",
+    "reselect": "^4.0.0",
+    "web3": "^1.4.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@open-wc/eslint-config",
+      "eslint-config-prettier"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "arrowParens": "avoid"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ]
+  }
+}
