@@ -148,11 +148,19 @@ export class KlipApp extends connect(CrcaStaticStore.store)(LitElement) {
     return html`
       <mwc-list activatable>
         <mwc-list-item
-          ?activated=${this.page === CRCA_URL_PAGE_LOGIN}
+          ?activated=${this.page === CRCA_URL_PAGE_HOME}
           graphic="icon"
         >
-          <a href="home" @click=${this.toggleDrawer}>Iniciar Sesión</a>
-          <mwc-icon slot="graphic">account_circle</mwc-icon>
+          <a href="${CRCA_URL_PAGE_HOME}" @click=${this.toggleDrawer}
+            >Proyectos</a
+          >
+          <mwc-icon slot="graphic">view_list</mwc-icon>
+        </mwc-list-item>
+        <mwc-list-item ?activated=${this.page === PAGE_DIRECTUS} graphic="icon">
+          <a href="${PAGE_DIRECTUS}" @click=${this.toggleDrawer}
+            >Administración</a
+          >
+          <mwc-icon slot="graphic">admin_panel_settings</mwc-icon>
         </mwc-list-item>
       </mwc-list>
     `;
