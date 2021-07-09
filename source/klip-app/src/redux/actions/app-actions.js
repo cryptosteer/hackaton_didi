@@ -19,6 +19,7 @@ import { TAG_LOAD_PAGE } from '../../config/processTag.js';
 import { PAGE_DIRECTUS } from '../../config/page.js';
 import { loggedInSelector } from '../selectors/app-selectors.js';
 import { FIRST_PAGE } from '../../config/config.js';
+import { refreshBalance } from './metaCoin-actions.js';
 
 export const SET_ACCOUNTS = 'SET_ACCOUNTS';
 export const UPDATE_ACCOUNT_ACTIVA = 'UPDATE_ACCOUNT_ACTIVA';
@@ -53,6 +54,10 @@ export const updateAccounts = accounts => (dispatch, getState) => {
     dispatch(crcaUrlNavigate(pg));
   } else if (account === null && loggedIn) {
     dispatch(crcaUrlNavigate(CRCA_URL_PAGE_LOGIN));
+  }
+
+  if (account !== null) {
+    dispatch(refreshBalance());
   }
 };
 
