@@ -39,40 +39,40 @@ contract("Klip", accounts => {
     }
   });
 
-  it("Numero inicial de organizaciones igual a 0", async () => {
+  it("Número inicial de organizaciones igual a 0", async () => {
     numeroOrganizaciones = await insKlip.organizationCounter(opOrganizacion1);
     assert.equal(numeroOrganizaciones, 0);
   });
 
-  it("Numero inicial de proyectos igual a 0", async () => {
+  it("Número inicial de proyectos igual a 0", async () => {
     numeroProyectos = await insKlip.projectCounter(opOrganizacion1);
     assert.equal(numeroProyectos, 0);
   });
 
-  it("AdminKlip debería crear organizacion", async () => {
+  it("AdminKlip debería crear organización", async () => {
     await insKlip.createOrganization(dataOrganization.name, dataOrganization.description, opOrganizacion1.from, opAdminKlip);
   });
 
-  it("Comprobar que existe la organizacion", async () => {
+  it("Comprobar que existe la organización", async () => {
     ExisteOrganizacion = await insKlip.organizationExists(1, opAdminKlip);
     assert.equal(ExisteOrganizacion, true);
   });
 
-  it("Numero de organizaciones igual a 1", async () => {
+  it("Número de organizaciones igual a 1", async () => {
     numeroOrganizaciones = await insKlip.organizationCounter(opAdminKlip);
     assert.equal(numeroOrganizaciones, 1);
   });
 
-  it("Comprobar nombre de la organizacion", async () => {
+  it("Comprobar nombre de la organización", async () => {
     organizacion = await insKlip.getOrganization(1, opAdminKlip);
     assert.equal(organizacion[0], dataOrganization.name);
   });
 
-  it("Comprobar descripcion de la organizacion", async () => {
+  it("Comprobar descripción de la organización", async () => {
     assert.equal(organizacion[1], dataOrganization.description);
   });
 
-  it("Organizacion debería crear proyecto", async () => {
+  it("Organización debería crear proyecto", async () => {
     await insKlip.createProject(opUsuarioDIDI2.from, dataProject.name, dataProject.description, opOrganizacion1);
   });
 
@@ -89,7 +89,7 @@ contract("Klip", accounts => {
     assert.equal(ExisteProyecto, true);
   });
 
-  it("Numero de proyectos igual a 1", async () => {
+  it("Número de proyectos igual a 1", async () => {
     numeroProyectos = await insKlip.projectCounter(opOrganizacion1);
     assert.equal(numeroProyectos, 1);
   });
@@ -99,7 +99,7 @@ contract("Klip", accounts => {
     assert.equal(proyecto[0], dataProject.name);
   });
 
-  it("Comprobar descripcion del proyecto", async () => {
+  it("Comprobar descripción del proyecto", async () => {
     assert.equal(proyecto[1], dataProject.description);
   });
 
@@ -112,7 +112,7 @@ contract("Klip", accounts => {
     assert.equal(ExisteFase, true);
   });
 
-  it("Numero de fases igual a 1", async () => {
+  it("Número de fases igual a 1", async () => {
     numeroOrganizaciones = await insKlip.phaseCounter(opOrganizacion1);
     assert.equal(numeroOrganizaciones, 1);
  });
@@ -122,7 +122,7 @@ contract("Klip", accounts => {
     assert.equal(fase[0], dataProject.phases[0].name);
   });
 
-  it("Comprobar descripcion de la fase", async () => {
+  it("Comprobar descripción de la fase", async () => {
     assert.equal(fase[1], dataProject.phases[0].description);
   });
 
@@ -135,7 +135,7 @@ contract("Klip", accounts => {
     assert.equal(ExisteEvidence, true);
   });
 
-  it("Numero de evidencias igual a 1", async () => {
+  it("Número de evidencias igual a 1", async () => {
     numeroEvidencias = await insKlip.evidenceCounter(opOrganizacion1);
     assert.equal(numeroEvidencias, 1);
   });
@@ -145,11 +145,11 @@ contract("Klip", accounts => {
     assert.equal(evidencia[0], dataProject.phases[0].evidences[0].name);
   });
 
-  it("Comprobar descripcion de la evidencia", async () => {
+  it("Comprobar descripción de la evidencia", async () => {
     assert.equal(evidencia[1], dataProject.phases[0].evidences[0].description);
   });
 
-  it("Organizacion debería activar el proyecto", async () => {
+  it("Organización debería activar el proyecto", async () => {
     await insKlip.activateProject(1, opOrganizacion1);
   });
 
@@ -177,21 +177,21 @@ contract("Klip", accounts => {
     console.log('Datos: ', data);
   });
 
-  it("Organizacion debería rechazar la evidencia", async () => {
+  it("Organización debería rechazar la evidencia", async () => {
     comentario = "Se necesita ver el estado del patio.";
     await insKlip.rejectEvidence(1, comentario, opOrganizacion1);
   });
 
-  it("Organizacion debería aprobar la evidencia", async () => {
+  it("Organización debería aprobar la evidencia", async () => {
     comentario = "Todo en orden, seguimos adelante.";
     await insKlip.approveEvidence(1, comentario, opOrganizacion1);
   });
 
-  it("Organizacion debería terminar la fase", async () => {
+  it("Organización debería terminar la fase", async () => {
     await insKlip.finishPhase(1, opOrganizacion1);
   });
 
-  it("Organizacion debería terminar el proyecto", async () => {
+  it("Organización debería terminar el proyecto", async () => {
     await insKlip.finishProject(1, opOrganizacion1);
   });
 
