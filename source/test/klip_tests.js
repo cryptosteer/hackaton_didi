@@ -162,11 +162,12 @@ contract("Klip", accounts => {
   });
 
   it("Usuario DIDI debería cargar la evidencia", async () => {
-    const IPFS = require('ipfs') 
-    console.log('--- Prueba IPFS ---')
-    const node = await IPFS.create({silent: true})
+    const evidence = 'Esta es la evidencia #' + Math.round(Math.random()*10000);
+    const IPFS = require('ipfs');
+    console.log('--- Prueba IPFS ---');
+    const node = await IPFS.create({silent: true});
     const filesAdded = await node.add({
-    content: Buffer.from('Esta es la evidencia #' + Math.round(Math.random()*10000))
+        content: Buffer.from(evidence)
     })
     console.log('Evidencia cargada:', filesAdded.cid)
     const stream = node.cat(filesAdded.path)
@@ -174,7 +175,8 @@ contract("Klip", accounts => {
     for await (const chunk of stream) {
     data += chunk.toString();
     }
-    console.log('Datos: ', data);
+    console.log('Datos descargados: ', data);
+    assert.equal(evidence, data);
   });
 
   it("Organización debería rechazar la evidencia", async () => {
