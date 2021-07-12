@@ -162,7 +162,7 @@ contract("Klip", accounts => {
   });
 
   it("Usuario DIDI debería cargar la evidencia", async () => {
-    const evidence = 'Esta es la evidencia #' + Math.round(Math.random()*10000);
+    evidence = 'Esta es la evidencia #' + Math.round(Math.random()*10000);
     const IPFS = require('ipfs');
     console.log('--- Prueba IPFS ---');
     const node = await IPFS.create({silent: true});
@@ -177,6 +177,12 @@ contract("Klip", accounts => {
     }
     console.log('Datos descargados: ', data);
     assert.equal(evidence, data);
+    await insKlip.loadEvidence(1, evidence, opUsuarioDIDI1);
+  });
+
+  it("Comprobar evidencia cargada", async () => {
+    evidencia = await insKlip.getEvidence(1, opOrganizacion1);
+    assert.equal(evidencia[4], evidence);
   });
 
   it("Organización debería rechazar la evidencia", async () => {

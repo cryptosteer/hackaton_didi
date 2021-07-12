@@ -377,8 +377,8 @@ contract Klip {
         Get the evidence data
     */
     function getEvidence(uint256 _id) public view onlyBeneficiaryOrOrganization(_id)
-    returns (string memory, string memory, uint256, EvidenceState) {
-        return (evidence[_id].name, evidence[_id].description, evidence[_id].phaseId, evidence[_id].state);
+    returns (string memory, string memory, uint256, EvidenceState, string memory) {
+        return (evidence[_id].name, evidence[_id].description, evidence[_id].phaseId, evidence[_id].state, evidence[_id].ipfsPath);
     }
 
     /**
