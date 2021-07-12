@@ -16,6 +16,7 @@
   "dependencies": {
     "@material/mwc-button": "^0.21.0",
     "@webcomponents/webcomponentsjs": "^2.5.0",
+    "ipfs": "^0.55.4",
     "web3": "^1.2.4"
   }
 }
