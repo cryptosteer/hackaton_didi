@@ -2,6 +2,9 @@ import { html, css } from 'lit-element';
 import { PageViewElement } from './page-view-element';
 
 import '@material/mwc-button/mwc-button';
+import { CrcaStaticStore } from '@ascenso/crca-redux-store';
+import { crcaUrlNavigate } from '@ascenso/crca-redux-url-parser/redux';
+import { PAGE_REGISTRO_AREAS, PAGE_REGISTRO_CONFIRM } from '../config/page';
 
 class ViewRegistroProfile extends PageViewElement {
   static get styles() {
@@ -101,8 +104,26 @@ class ViewRegistroProfile extends PageViewElement {
         <div class="name"></div>
         <div class="v17_4329"><span class="v17_4330">¿Eres...?</span></div>
         <section>
-          <div><mwc-button raised>Emprendedor</mwc-button></div>
-          <div><mwc-button raised>Mentor</mwc-button></div>
+          <div>
+            <mwc-button
+              raised
+              @click=${() =>
+                CrcaStaticStore.store.dispatch(
+                  crcaUrlNavigate(PAGE_REGISTRO_AREAS)
+                )}
+              >Emprendedor</mwc-button
+            >
+          </div>
+          <div>
+            <mwc-button
+              raised
+              @click=${() =>
+                CrcaStaticStore.store.dispatch(
+                  crcaUrlNavigate(PAGE_REGISTRO_CONFIRM)
+                )}
+              >Mentor</mwc-button
+            >
+          </div>
         </section>
         <div class="name"></div>
         <div class="name"></div>

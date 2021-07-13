@@ -1,5 +1,13 @@
 import { html, css } from 'lit-element';
 import { PageViewElement } from './page-view-element';
+import { CrcaStaticStore } from '@ascenso/crca-redux-store';
+import { crcaUrlNavigate } from '@ascenso/crca-redux-url-parser/redux';
+
+import { PAGE_REGISTRO_CONFIRM } from '../config/page';
+
+import '@material/mwc-checkbox/mwc-checkbox';
+import '@material/mwc-formfield/mwc-formfield';
+import '@material/mwc-button/mwc-button';
 
 class ViewRegistroAreas extends PageViewElement {
   static get styles() {
@@ -30,7 +38,6 @@ class ViewRegistroAreas extends PageViewElement {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        margin: 11px;
         opacity: 1;
         position: absolute;
         top: 88px;
@@ -44,7 +51,6 @@ class ViewRegistroAreas extends PageViewElement {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        margin: 11px;
         opacity: 1;
         position: relative;
         top: 0px;
@@ -70,7 +76,7 @@ class ViewRegistroAreas extends PageViewElement {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        margin: 11px;
+        margin: 22px 0;
         opacity: 1;
         position: absolute;
         top: 309px;
@@ -84,7 +90,6 @@ class ViewRegistroAreas extends PageViewElement {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        margin: 11px;
         opacity: 1;
         position: relative;
         top: 0px;
@@ -121,6 +126,18 @@ class ViewRegistroAreas extends PageViewElement {
       .name {
         color: #fff;
       }
+      section {
+        position: absolute;
+        top: 360px;
+        left: 41px;
+        width: 294px;
+      }
+
+      section div {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+      }
     `;
   }
 
@@ -152,6 +169,43 @@ class ViewRegistroAreas extends PageViewElement {
             >
           </div>
         </div>
+        <section>
+          <div>
+            <mwc-formfield label="Hidroponia"
+              ><mwc-checkbox></mwc-checkbox
+            ></mwc-formfield>
+          </div>
+          <div>
+            <mwc-formfield label="Artesanias"
+              ><mwc-checkbox></mwc-checkbox
+            ></mwc-formfield>
+          </div>
+          <div>
+            <mwc-formfield label="Alimentos"
+              ><mwc-checkbox></mwc-checkbox
+            ></mwc-formfield>
+          </div>
+          <div>
+            <mwc-formfield label="Estilismo"
+              ><mwc-checkbox></mwc-checkbox
+            ></mwc-formfield>
+          </div>
+          <div>
+            <mwc-formfield label="Mecánica"
+              ><mwc-checkbox></mwc-checkbox
+            ></mwc-formfield>
+          </div>
+          <div>
+            <mwc-button
+              raised
+              @click=${() =>
+                CrcaStaticStore.store.dispatch(
+                  crcaUrlNavigate(PAGE_REGISTRO_CONFIRM)
+                )}
+              >Guardar</mwc-button
+            >
+          </div>
+        </section>
         <div class="name"></div>
         <div class="name"></div>
         <div class="name"></div>

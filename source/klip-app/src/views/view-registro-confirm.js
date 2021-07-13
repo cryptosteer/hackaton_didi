@@ -1,5 +1,10 @@
+import { CrcaStaticStore } from '@ascenso/crca-redux-store';
+import { crcaUrlNavigate } from '@ascenso/crca-redux-url-parser/redux';
 import { html, css } from 'lit-element';
+import { PAGE_PROYECTO_SEARCH } from '../config/page';
 import { PageViewElement } from './page-view-element';
+
+import '@material/mwc-button/mwc-button';
 
 class ViewRegistroConfirm extends PageViewElement {
   static get styles() {
@@ -25,12 +30,11 @@ class ViewRegistroConfirm extends PageViewElement {
       }
       .v22_6749 {
         width: 294px;
-        height: 165px;
+        height: 200px;
         background: url('assets/img/v22_6749.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        margin: 11px;
         opacity: 1;
         position: absolute;
         top: 88px;
@@ -39,12 +43,11 @@ class ViewRegistroConfirm extends PageViewElement {
       }
       .v22_6750 {
         width: 294px;
-        height: 165px;
+        height: 200px;
         background: url('assets/img/v22_6750.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        margin: 11px;
         opacity: 1;
         position: relative;
         top: 0px;
@@ -82,6 +85,16 @@ class ViewRegistroConfirm extends PageViewElement {
         left: 84px;
         overflow: hidden;
       }
+      section {
+        position: absolute;
+        width: 208px;
+        top: 660px;
+        left: 84px;
+      }
+
+      mwc-button {
+        width: 100%;
+      }
     `;
   }
 
@@ -107,6 +120,16 @@ class ViewRegistroConfirm extends PageViewElement {
         <div class="name"></div>
         <div class="name"></div>
         <div class="v80_5534"></div>
+        <section>
+          <mwc-button
+            raised
+            @click=${() =>
+              CrcaStaticStore.store.dispatch(
+                crcaUrlNavigate(PAGE_PROYECTO_SEARCH)
+              )}
+            >Vamos</mwc-button
+          >
+        </section>
       </div>
     `;
   }

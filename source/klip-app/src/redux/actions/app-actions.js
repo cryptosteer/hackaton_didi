@@ -94,7 +94,7 @@ export const loadPage = page => (dispatch, getState) => {
   const tag = generateProcessTag(TAG_LOAD_PAGE, page);
   dispatch(startPageLoading(tag));
   const state = getState();
-  const loggedIn = loggedInSelector(state);
+  const loggedIn = true; // loggedInSelector(state);
   const user = userSelector(state);
   /* const infoError = {
     loggedIn,
@@ -254,7 +254,7 @@ export const loadPage = page => (dispatch, getState) => {
       break;
     case PAGE_PROYECTO_DETAIL:
       if (loggedIn) {
-        import('../../views/view-prroyecto-detail.js')
+        import('../../views/view-proyecto-detail.js')
           .then(() => dispatch(stopPageLoading(tag)))
           .catch(e => {
             dispatch(loadPage(CRCA_URL_PAGE_404));
@@ -270,7 +270,7 @@ export const loadPage = page => (dispatch, getState) => {
       break;
     case PAGE_PROYECTO_GESTION:
       if (loggedIn) {
-        import('../../views/view-prroyecto-gestion.js')
+        import('../../views/view-proyecto-gestion.js')
           .then(() => dispatch(stopPageLoading(tag)))
           .catch(e => {
             dispatch(loadPage(CRCA_URL_PAGE_404));
@@ -286,7 +286,7 @@ export const loadPage = page => (dispatch, getState) => {
       break;
     case PAGE_PROYECTO_ORGANIZACION:
       if (loggedIn) {
-        import('../../views/view-prroyecto-organizacion.js')
+        import('../../views/view-proyecto-organizacion.js')
           .then(() => dispatch(stopPageLoading(tag)))
           .catch(e => {
             dispatch(loadPage(CRCA_URL_PAGE_404));
@@ -302,7 +302,7 @@ export const loadPage = page => (dispatch, getState) => {
       break;
     case PAGE_PROYECTO_PLANIFICACION:
       if (loggedIn) {
-        import('../../views/view-prroyecto-planificacion.js')
+        import('../../views/view-proyecto-planificacion.js')
           .then(() => dispatch(stopPageLoading(tag)))
           .catch(e => {
             dispatch(loadPage(CRCA_URL_PAGE_404));
@@ -318,7 +318,7 @@ export const loadPage = page => (dispatch, getState) => {
       break;
     case PAGE_PROYECTO_SEARCH:
       if (loggedIn) {
-        import('../../views/view-prroyecto-search.js')
+        import('../../views/view-proyecto-search.js')
           .then(() => dispatch(stopPageLoading(tag)))
           .catch(e => {
             dispatch(loadPage(CRCA_URL_PAGE_404));
@@ -334,7 +334,7 @@ export const loadPage = page => (dispatch, getState) => {
       break;
     case PAGE_PROYECTO_STATUS:
       if (loggedIn) {
-        import('../../views/view-prroyecto-status.js')
+        import('../../views/view-proyecto-status.js')
           .then(() => dispatch(stopPageLoading(tag)))
           .catch(e => {
             dispatch(loadPage(CRCA_URL_PAGE_404));
