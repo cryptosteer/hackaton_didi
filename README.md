@@ -1,8 +1,6 @@
-# Hackaton DIDI (Actualizar nombre del proyecto) 
+# Klip
 
-Proyecto para participar en la hackaton identihack organizada por .
-
-Para un mejor entendimiento del proyecto se sugiere leer el documento [Documento.pdf](#) 
+Proyecto para participar en la hackaton identihack organizada por DIDI, un proyecto de identidad digital auto-soberana a través de blockchain.
 
 ## Pre-requisitos
 
@@ -17,11 +15,11 @@ npm install
 truffle develop
 migrate --reset
 ```
-Luego abrir una nueva consola de comandos y moverse a la carpeta source/app en la raíz del proyecto, allí se debe ejecutar:
+Luego abrir una nueva consola de comandos y moverse a la carpeta source/klip-app en la raíz del proyecto, allí se debe ejecutar:
 
 ```bash
 npm install
-npm run dev
+npm run start
 ```
 
 Conectar con metamask:
