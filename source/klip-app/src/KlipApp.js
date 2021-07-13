@@ -133,7 +133,7 @@ export class KlipApp extends connect(CrcaStaticStore.store)(LitElement) {
           ><img
             id="logo-klip"
             class="logo"
-            src="assets/img/klip_logo.png"
+            src="src/assets/img/klip_logo.png"
             alt="Logo Klip"
         /></span>
         <span slot="subtitle"></span>

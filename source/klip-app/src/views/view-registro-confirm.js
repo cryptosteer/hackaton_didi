@@ -31,7 +31,7 @@ class ViewRegistroConfirm extends PageViewElement {
       .v22_6749 {
         width: 294px;
         height: 200px;
-        background: url('assets/img/v22_6749.png');
+        background: url('src/assets/img/v22_6749.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -44,7 +44,7 @@ class ViewRegistroConfirm extends PageViewElement {
       .v22_6750 {
         width: 294px;
         height: 200px;
-        background: url('assets/img/v22_6750.png');
+        background: url('src/assets/img/v22_6750.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -56,7 +56,7 @@ class ViewRegistroConfirm extends PageViewElement {
       }
       .v22_6751 {
         width: 301px;
-        color: url('assets/img/v22_6751.png');
+        color: url('src/assets/img/v22_6751.png');
         position: relative;
         top: 0px;
         left: 0px;
@@ -75,7 +75,7 @@ class ViewRegistroConfirm extends PageViewElement {
       .v80_5534 {
         width: 208px;
         height: 307px;
-        background: url('assets/img/v80_5534.png');
+        background: url('src/assets/img/v80_5534.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

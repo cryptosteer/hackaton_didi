@@ -29,7 +29,7 @@ class ViewProyectoSearch extends PageViewElement {
       .v25_4203 {
         width: 327px;
         height: 373px;
-        background: url('assets/img/v25_4203.png');
+        background: url('src/assets/img/v25_4203.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -43,7 +43,7 @@ class ViewProyectoSearch extends PageViewElement {
       .v24_8641 {
         width: 327px;
         height: 67px;
-        background: url('assets/img/v24_8641.png');
+        background: url('src/assets/img/v24_8641.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -56,7 +56,7 @@ class ViewProyectoSearch extends PageViewElement {
       .v7_4007 {
         width: 327px;
         height: 67px;
-        background: url('assets/img/v7_4007.png');
+        background: url('src/assets/img/v7_4007.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -85,7 +85,7 @@ class ViewProyectoSearch extends PageViewElement {
       .v24_8798 {
         width: 327px;
         height: 67px;
-        background: url('assets/img/v24_8798.png');
+        background: url('src/assets/img/v24_8798.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -98,7 +98,7 @@ class ViewProyectoSearch extends PageViewElement {
       .v24_8799 {
         width: 327px;
         height: 67px;
-        background: url('assets/img/v24_8799.png');
+        background: url('src/assets/img/v24_8799.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -127,7 +127,7 @@ class ViewProyectoSearch extends PageViewElement {
       .v24_8806 {
         width: 327px;
         height: 67px;
-        background: url('assets/img/v24_8806.png');
+        background: url('src/assets/img/v24_8806.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -140,7 +140,7 @@ class ViewProyectoSearch extends PageViewElement {
       .v24_8807 {
         width: 327px;
         height: 67px;
-        background: url('assets/img/v24_8807.png');
+        background: url('src/assets/img/v24_8807.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -169,7 +169,7 @@ class ViewProyectoSearch extends PageViewElement {
       .v25_4190 {
         width: 327px;
         height: 67px;
-        background: url('assets/img/v25_4190.png');
+        background: url('src/assets/img/v25_4190.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -182,7 +182,7 @@ class ViewProyectoSearch extends PageViewElement {
       .v25_4191 {
         width: 327px;
         height: 67px;
-        background: url('assets/img/v25_4191.png');
+        background: url('src/assets/img/v25_4191.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

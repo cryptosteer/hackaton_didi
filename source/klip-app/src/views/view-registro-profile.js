@@ -34,7 +34,7 @@ class ViewRegistroProfile extends PageViewElement {
       .v17_4329 {
         width: 120px;
         height: 40px;
-        background: url('assets/img/v17_4329.png');
+        background: url('src/assets/img/v17_4329.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -66,7 +66,7 @@ class ViewRegistroProfile extends PageViewElement {
       .v81_5015 {
         width: 189px;
         height: 288px;
-        background: url('assets/img/v81_5015.png');
+        background: url('src/assets/img/v81_5015.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

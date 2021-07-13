@@ -26,7 +26,7 @@ class ViewProyectoPlanificacion extends PageViewElement {
       .v43_4440 {
         width: 375px;
         height: 617px;
-        background: url('assets/img/v43_4440.png');
+        background: url('src/assets/img/v43_4440.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -49,7 +49,7 @@ class ViewProyectoPlanificacion extends PageViewElement {
       .v43_4442 {
         width: 343px;
         height: 288px;
-        background: url('assets/img/v43_4442.png');
+        background: url('src/assets/img/v43_4442.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -62,7 +62,7 @@ class ViewProyectoPlanificacion extends PageViewElement {
       .v43_4443 {
         width: 336px;
         height: 48px;
-        background: url('assets/img/v43_4443.png');
+        background: url('src/assets/img/v43_4443.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -159,7 +159,7 @@ class ViewProyectoPlanificacion extends PageViewElement {
       .v43_4451 {
         width: 336px;
         height: 48px;
-        background: url('assets/img/v43_4451.png');
+        background: url('src/assets/img/v43_4451.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -256,7 +256,7 @@ class ViewProyectoPlanificacion extends PageViewElement {
       .v43_4459 {
         width: 336px;
         height: 48px;
-        background: url('assets/img/v43_4459.png');
+        background: url('src/assets/img/v43_4459.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -353,7 +353,7 @@ class ViewProyectoPlanificacion extends PageViewElement {
       .v43_4467 {
         width: 336px;
         height: 48px;
-        background: url('assets/img/v43_4467.png');
+        background: url('src/assets/img/v43_4467.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -450,7 +450,7 @@ class ViewProyectoPlanificacion extends PageViewElement {
       .v43_4475 {
         width: 336px;
         height: 48px;
-        background: url('assets/img/v43_4475.png');
+        background: url('src/assets/img/v43_4475.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -547,7 +547,7 @@ class ViewProyectoPlanificacion extends PageViewElement {
       .v43_4483 {
         width: 336px;
         height: 48px;
-        background: url('assets/img/v43_4483.png');
+        background: url('src/assets/img/v43_4483.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -644,7 +644,7 @@ class ViewProyectoPlanificacion extends PageViewElement {
       .v43_4491 {
         width: 327px;
         height: 201px;
-        background: url('assets/img/v43_4491.png');
+        background: url('src/assets/img/v43_4491.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

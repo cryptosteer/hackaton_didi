@@ -74,7 +74,7 @@ class ViewProyectoOrganizacion extends PageViewElement {
       .v80_5502 {
         width: 343px;
         height: 150px;
-        background: url('assets/img/v80_5502.png');
+        background: url('src/assets/img/v80_5502.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

@@ -30,7 +30,7 @@ class ViewIntro4 extends PageViewElement {
       .v18_6718 {
         width: 316px;
         height: 9px;
-        background: url('assets/img/v18_6718.png');
+        background: url('src/assets/img/v18_6718.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -56,7 +56,7 @@ class ViewIntro4 extends PageViewElement {
       .v14_4043 {
         width: 327px;
         height: 144px;
-        background: url('assets/img/v14_4043.png');
+        background: url('src/assets/img/v14_4043.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -97,7 +97,7 @@ class ViewIntro4 extends PageViewElement {
       .v45_4598 {
         width: 191px;
         height: 360px;
-        background: url('assets/img/v45_4598.png');
+        background: url('src/assets/img/v45_4598.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -133,10 +133,10 @@ class ViewIntro4 extends PageViewElement {
         @touchend=${this.touchEnd}
       >
         <div>
-          <img src="assets/img/rectangulo-inactivo.svg" />
-          <img src="assets/img/rectangulo-inactivo.svg" />
-          <img src="assets/img/rectangulo-inactivo.svg" />
-          <img src="assets/img/rectangulo-activo.svg" />
+          <img src="src/assets/img/rectangulo-inactivo.svg" />
+          <img src="src/assets/img/rectangulo-inactivo.svg" />
+          <img src="src/assets/img/rectangulo-inactivo.svg" />
+          <img src="src/assets/img/rectangulo-activo.svg" />
         </div>
         <div class="name"></div>
         <div class="v18_6718">

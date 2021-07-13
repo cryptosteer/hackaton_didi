@@ -96,7 +96,7 @@ class ViewConnectMetamask extends connect(CrcaStaticStore.store)(
           <img
             id="logo-klip"
             class="logo"
-            src="assets/img/klip_logo.png"
+            src="src/assets/img/klip_logo.png"
             alt="Logo Klip"
           />
         </header>

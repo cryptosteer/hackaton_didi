@@ -26,7 +26,7 @@ class ViewProyectoGestion extends PageViewElement {
       .v38_5367 {
         width: 20px;
         height: 4px;
-        background: url('assets/img/v38_5367.png');
+        background: url('src/assets/img/v38_5367.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -128,7 +128,7 @@ class ViewProyectoGestion extends PageViewElement {
       .v41_8136 {
         width: 294px;
         height: 24px;
-        background: url('assets/img/v41_8136.png');
+        background: url('src/assets/img/v41_8136.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -142,7 +142,7 @@ class ViewProyectoGestion extends PageViewElement {
       .v41_8137 {
         width: 294px;
         height: 24px;
-        background: url('assets/img/v41_8137.png');
+        background: url('src/assets/img/v41_8137.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -168,7 +168,7 @@ class ViewProyectoGestion extends PageViewElement {
       .v41_8168 {
         width: 188px;
         height: 80px;
-        background: url('assets/img/v41_8168.png');
+        background: url('src/assets/img/v41_8168.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -182,7 +182,7 @@ class ViewProyectoGestion extends PageViewElement {
       .v41_8169 {
         width: 188px;
         height: 80px;
-        background: url('assets/img/v41_8169.png');
+        background: url('src/assets/img/v41_8169.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -211,7 +211,7 @@ class ViewProyectoGestion extends PageViewElement {
       .v81_5017 {
         width: 140px;
         height: 219px;
-        background: url('assets/img/v81_5017.png');
+        background: url('src/assets/img/v81_5017.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

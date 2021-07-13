@@ -23,7 +23,7 @@ class ViewLogin extends PageViewElement {
       .v14_4093 {
         width: 258px;
         height: 161px;
-        background: url('assets/img/v14_4093.png');
+        background: url('src/assets/img/v14_4093.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -113,7 +113,7 @@ class ViewLogin extends PageViewElement {
     return html`
       <div class="v6_3167">
         <div class="v14_4093">
-          <img src="assets/img/klip_logo.svg" />
+          <img src="src/assets/img/klip_logo.svg" />
           <div class="v7_3642"></div>
           <div class="v7_3643"></div>
           <div class="v7_3644"></div>

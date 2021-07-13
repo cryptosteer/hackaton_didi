@@ -44,7 +44,7 @@ class ViewUsers extends PageViewElement {
       .v31_5313 {
         width: 231px;
         height: 72px;
-        background: url('assets/img/v31_5313.png');
+        background: url('src/assets/img/v31_5313.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -69,7 +69,7 @@ class ViewUsers extends PageViewElement {
       .v31_5302 {
         width: 72px;
         height: 72px;
-        background: url('assets/img/v31_5302.png');
+        background: url('src/assets/img/v31_5302.png');
         opacity: 1;
         position: absolute;
         top: 0px;
@@ -78,7 +78,7 @@ class ViewUsers extends PageViewElement {
       .v31_5303 {
         width: 76px;
         height: 20px;
-        background: url('assets/img/v31_5303.png');
+        background: url('src/assets/img/v31_5303.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -91,7 +91,7 @@ class ViewUsers extends PageViewElement {
       .v31_5304 {
         width: 76px;
         height: 20px;
-        background: url('assets/img/v31_5304.png');
+        background: url('src/assets/img/v31_5304.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -117,7 +117,7 @@ class ViewUsers extends PageViewElement {
       .v31_5314 {
         width: 231px;
         height: 72px;
-        background: url('assets/img/v31_5314.png');
+        background: url('src/assets/img/v31_5314.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -142,7 +142,7 @@ class ViewUsers extends PageViewElement {
       .v31_5308 {
         width: 72px;
         height: 72px;
-        background: url('assets/img/v31_5308.png');
+        background: url('src/assets/img/v31_5308.png');
         opacity: 1;
         position: absolute;
         top: 0px;
@@ -151,7 +151,7 @@ class ViewUsers extends PageViewElement {
       .v31_5309 {
         width: 76px;
         height: 20px;
-        background: url('assets/img/v31_5309.png');
+        background: url('src/assets/img/v31_5309.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -164,7 +164,7 @@ class ViewUsers extends PageViewElement {
       .v31_5310 {
         width: 76px;
         height: 20px;
-        background: url('assets/img/v31_5310.png');
+        background: url('src/assets/img/v31_5310.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -190,7 +190,7 @@ class ViewUsers extends PageViewElement {
       .v31_5322 {
         width: 244px;
         height: 72px;
-        background: url('assets/img/v31_5322.png');
+        background: url('src/assets/img/v31_5322.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -215,7 +215,7 @@ class ViewUsers extends PageViewElement {
       .v31_5324 {
         width: 72px;
         height: 72px;
-        background: url('assets/img/v31_5324.png');
+        background: url('src/assets/img/v31_5324.png');
         opacity: 1;
         position: absolute;
         top: 0px;
@@ -224,7 +224,7 @@ class ViewUsers extends PageViewElement {
       .v31_5325 {
         width: 76px;
         height: 20px;
-        background: url('assets/img/v31_5325.png');
+        background: url('src/assets/img/v31_5325.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -237,7 +237,7 @@ class ViewUsers extends PageViewElement {
       .v31_5326 {
         width: 76px;
         height: 20px;
-        background: url('assets/img/v31_5326.png');
+        background: url('src/assets/img/v31_5326.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -263,7 +263,7 @@ class ViewUsers extends PageViewElement {
       .v31_5400 {
         width: 269px;
         height: 72px;
-        background: url('assets/img/v31_5400.png');
+        background: url('src/assets/img/v31_5400.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -276,7 +276,7 @@ class ViewUsers extends PageViewElement {
       .v31_5329 {
         width: 269px;
         height: 72px;
-        background: url('assets/img/v31_5329.png');
+        background: url('src/assets/img/v31_5329.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -301,7 +301,7 @@ class ViewUsers extends PageViewElement {
       .v31_5331 {
         width: 72px;
         height: 72px;
-        background: url('assets/img/v31_5331.png');
+        background: url('src/assets/img/v31_5331.png');
         opacity: 1;
         position: absolute;
         top: 0px;
@@ -310,7 +310,7 @@ class ViewUsers extends PageViewElement {
       .v31_5332 {
         width: 76px;
         height: 20px;
-        background: url('assets/img/v31_5332.png');
+        background: url('src/assets/img/v31_5332.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -323,7 +323,7 @@ class ViewUsers extends PageViewElement {
       .v31_5333 {
         width: 76px;
         height: 20px;
-        background: url('assets/img/v31_5333.png');
+        background: url('src/assets/img/v31_5333.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

@@ -32,7 +32,7 @@ class ViewProyectoStatus extends PageViewElement {
       .v38_5254 {
         width: 343px;
         height: 364px;
-        background: url('assets/img/v38_5254.png');
+        background: url('src/assets/img/v38_5254.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -57,7 +57,7 @@ class ViewProyectoStatus extends PageViewElement {
       .v38_5256 {
         width: 343px;
         height: 303px;
-        background: url('assets/img/v38_5256.png');
+        background: url('src/assets/img/v38_5256.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

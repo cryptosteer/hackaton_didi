@@ -35,7 +35,7 @@ class ViewHome extends LitElement {
       .v31_5550 {
         width: 351px;
         height: 158px;
-        background: url('assets/img/v31_5550.png');
+        background: url('src/assets/img/v31_5550.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -80,7 +80,7 @@ class ViewHome extends LitElement {
       .v31_5556 {
         width: 351px;
         height: 255px;
-        background: url('assets/img/v31_5556.png');
+        background: url('src/assets/img/v31_5556.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

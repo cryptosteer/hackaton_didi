@@ -24,7 +24,7 @@ class ViewIntro1 extends PageViewElement {
       .v12_6317 {
         width: 327px;
         height: 144px;
-        background: url('assets/img/v12_6317.png');
+        background: url('src/assets/img/v12_6317.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -49,7 +49,7 @@ class ViewIntro1 extends PageViewElement {
       }
       .v12_6319 {
         width: 327px;
-        color: url('assets/img/v12_6319.png');
+        color: url('src/assets/img/v12_6319.png');
         position: absolute;
         top: 72px;
         left: 0px;
@@ -63,7 +63,7 @@ class ViewIntro1 extends PageViewElement {
       .v18_6721 {
         width: 316px;
         height: 9px;
-        background: url('assets/img/v18_6721.png');
+        background: url('src/assets/img/v18_6721.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -89,7 +89,7 @@ class ViewIntro1 extends PageViewElement {
       .v45_4597 {
         width: 194px;
         height: 368px;
-        background: url('assets/img/v45_4597.png');
+        background: url('src/assets/img/v45_4597.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -119,10 +119,10 @@ class ViewIntro1 extends PageViewElement {
         @touchend=${this.touchEnd}
       >
         <div>
-          <img src="assets/img/rectangulo-activo.svg" />
-          <img src="assets/img/rectangulo-inactivo.svg" />
-          <img src="assets/img/rectangulo-inactivo.svg" />
-          <img src="assets/img/rectangulo-inactivo.svg" />
+          <img src="src/assets/img/rectangulo-activo.svg" />
+          <img src="src/assets/img/rectangulo-inactivo.svg" />
+          <img src="src/assets/img/rectangulo-inactivo.svg" />
+          <img src="src/assets/img/rectangulo-inactivo.svg" />
         </div>
         <div class="v12_6317">
           <span class="v12_6318">Involúcrate</span>

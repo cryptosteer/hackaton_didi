@@ -34,7 +34,7 @@ class ViewRegistroAreas extends PageViewElement {
       .v81_5109 {
         width: 294px;
         height: 216px;
-        background: url('assets/img/v81_5109.png');
+        background: url('src/assets/img/v81_5109.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -47,7 +47,7 @@ class ViewRegistroAreas extends PageViewElement {
       .v81_5110 {
         width: 294px;
         height: 216px;
-        background: url('assets/img/v81_5110.png');
+        background: url('src/assets/img/v81_5110.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -72,7 +72,7 @@ class ViewRegistroAreas extends PageViewElement {
       .v81_5112 {
         width: 294px;
         height: 48px;
-        background: url('assets/img/v81_5112.png');
+        background: url('src/assets/img/v81_5112.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -86,7 +86,7 @@ class ViewRegistroAreas extends PageViewElement {
       .v81_5113 {
         width: 294px;
         height: 48px;
-        background: url('assets/img/v81_5113.png');
+        background: url('src/assets/img/v81_5113.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

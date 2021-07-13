@@ -23,7 +23,7 @@ class ViewProyectoDetail extends PageViewElement {
       .v41_8072 {
         width: 327px;
         height: 786px;
-        background: url('assets/img/v41_8072.png');
+        background: url('src/assets/img/v41_8072.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -90,7 +90,7 @@ class ViewProyectoDetail extends PageViewElement {
       .v80_5536 {
         width: 271px;
         height: 330px;
-        background: url('assets/img/v80_5536.png');
+        background: url('src/assets/img/v80_5536.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

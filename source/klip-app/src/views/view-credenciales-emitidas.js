@@ -22,7 +22,7 @@ class ViewCredencialesEmitidas extends LitElement {
       .v43_4567 {
         width: 20px;
         height: 4px;
-        background: url('assets/img/v43_4567.png');
+        background: url('src/assets/img/v43_4567.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -68,7 +68,7 @@ class ViewCredencialesEmitidas extends LitElement {
       .v43_4576 {
         width: 294px;
         height: 24px;
-        background: url('assets/img/v43_4576.png');
+        background: url('src/assets/img/v43_4576.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -82,7 +82,7 @@ class ViewCredencialesEmitidas extends LitElement {
       .v43_4577 {
         width: 294px;
         height: 24px;
-        background: url('assets/img/v43_4577.png');
+        background: url('src/assets/img/v43_4577.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -108,7 +108,7 @@ class ViewCredencialesEmitidas extends LitElement {
       .v43_4579 {
         width: 294px;
         height: 24px;
-        background: url('assets/img/v43_4579.png');
+        background: url('src/assets/img/v43_4579.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -122,7 +122,7 @@ class ViewCredencialesEmitidas extends LitElement {
       .v43_4582 {
         width: 115px;
         height: 115px;
-        background: url('assets/img/v43_4582.png');
+        background: url('src/assets/img/v43_4582.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -135,7 +135,7 @@ class ViewCredencialesEmitidas extends LitElement {
       .v43_4623 {
         width: 115px;
         height: 115px;
-        background: url('assets/img/v43_4623.png');
+        background: url('src/assets/img/v43_4623.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -148,7 +148,7 @@ class ViewCredencialesEmitidas extends LitElement {
       .v43_4624 {
         width: 115px;
         height: 115px;
-        background: url('assets/img/v43_4624.png');
+        background: url('src/assets/img/v43_4624.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

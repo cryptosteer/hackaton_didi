@@ -35,7 +35,7 @@ class ViewRegistro extends PageViewElement {
       .v7_3663 {
         width: 327px;
         height: 182px;
-        background: url('assets/img/v7_3663.png');
+        background: url('src/assets/img/v7_3663.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -61,7 +61,7 @@ class ViewRegistro extends PageViewElement {
       .v18_6724 {
         width: 292px;
         height: 80px;
-        background: url('assets/img/v18_6724.png');
+        background: url('src/assets/img/v18_6724.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -73,7 +73,7 @@ class ViewRegistro extends PageViewElement {
         overflow: hidden;
       }
       .v18_6726 {
-        background: url('assets/img/v18_6726.png');
+        background: url('src/assets/img/v18_6726.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
