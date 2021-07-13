@@ -7,6 +7,11 @@
   <meta name="Description" content="Aplicación descentralizada para el apoyo de la inversión social">
   <base href="/">
 
+  <link rel="preload"  href="https://fonts.googleapis.com/css?family=Inter&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  </noscript>
+
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons&display=block">
@@ -31,7 +36,8 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
+      font-family: Inter;
+      font-weight: Medium;
       background-color: #ededed;
       --theme-primary:rgb(19, 114, 184);
 
@@ -46,8 +52,8 @@
   <noscript>
     Porfavor habilitar JavaScript para ver esta aplicación web.
   </noscript>
-  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-  <script type="module" src="./src/web3-app.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script type="module" src="./src/web3-app.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script type="module" src="./src/klip-app.js"></script>
 </body>

@@ -21,7 +21,26 @@ import {
   updateAccounts,
 } from './redux/actions/app-actions.js';
 import { user } from './redux/reducers/user-reducer.js';
-import { PAGE_DIRECTUS, PAGE_METACOIN } from './config/page';
+import {
+  PAGE_CREDENCIALES_EMITIDAS,
+  PAGE_DIRECTUS,
+  PAGE_INTRO_1,
+  PAGE_INTRO_2,
+  PAGE_INTRO_3,
+  PAGE_INTRO_4,
+  PAGE_METACOIN,
+  PAGE_PROYECTO_DETAIL,
+  PAGE_PROYECTO_GESTION,
+  PAGE_PROYECTO_ORGANIZACION,
+  PAGE_PROYECTO_PLANIFICACION,
+  PAGE_PROYECTO_SEARCH,
+  PAGE_PROYECTO_STATUS,
+  PAGE_REGISTRO,
+  PAGE_REGISTRO_AREAS,
+  PAGE_REGISTRO_CONFIRM,
+  PAGE_REGISTRO_PROFILE,
+  PAGE_USERS,
+} from './config/page';
 import {
   loggedInSelector,
   web3SuccessSelector,
@@ -122,22 +141,86 @@ export class KlipApp extends connect(CrcaStaticStore.store)(LitElement) {
         <div id="appContent" slot="appContent">
           ${this._loggedIn ? this.headerTemplate : ''}
           <dile-pages selected="${this._page}" attrForSelected="name">
-            <view-login
-              name="${CRCA_URL_PAGE_LOGIN}"
-              ?active=${this._page === CRCA_URL_PAGE_LOGIN}
-            ></view-login>
-            <view-home
-              name="${CRCA_URL_PAGE_HOME}"
-              ?active=${this._page === CRCA_URL_PAGE_HOME}
-            ></view-home>
+            <view-credenciales-emitidas
+              name="${PAGE_CREDENCIALES_EMITIDAS}"
+              ?active=${this._page === PAGE_CREDENCIALES_EMITIDAS}
+            ></view-credenciales-emitidas>
             <view-directus
               name="${PAGE_DIRECTUS}"
               ?active=${this._page === PAGE_DIRECTUS}
             ></view-directus>
+            <view-home
+              name="${CRCA_URL_PAGE_HOME}"
+              ?active=${this._page === CRCA_URL_PAGE_HOME}
+            ></view-home>
+            <view-intro-1
+              name="${PAGE_INTRO_1}"
+              ?active=${this._page === PAGE_INTRO_1}
+            ></view-intro-1>
+            <view-intro-2
+              name="${PAGE_INTRO_2}"
+              ?active=${this._page === PAGE_INTRO_2}
+            ></view-intro-2>
+            <view-intro-3
+              name="${PAGE_INTRO_3}"
+              ?active=${this._page === PAGE_INTRO_3}
+            ></view-intro-3>
+            <view-intro-4
+              name="${PAGE_INTRO_4}"
+              ?active=${this._page === PAGE_INTRO_4}
+            ></view-intro-4>
+            <view-login
+              name="${CRCA_URL_PAGE_LOGIN}"
+              ?active=${this._page === CRCA_URL_PAGE_LOGIN}
+            ></view-login>
             <view-metacoin
               name="${PAGE_METACOIN}"
               ?active=${this._page === PAGE_METACOIN}
             ></view-metacoin>
+            <view-proyecto-detail
+              name="${PAGE_PROYECTO_DETAIL}"
+              ?active=${this._page === PAGE_PROYECTO_DETAIL}
+            ></view-proyecto-detail>
+            <view-proyecto-gestion
+              name="${PAGE_PROYECTO_GESTION}"
+              ?active=${this._page === PAGE_PROYECTO_GESTION}
+            ></view-proyecto-gestion>
+            <view-proyecto-organizacion
+              name="${PAGE_PROYECTO_ORGANIZACION}"
+              ?active=${this._page === PAGE_PROYECTO_ORGANIZACION}
+            ></view-proyecto-organizacion>
+            <view-proyecto-planificacion
+              name="${PAGE_PROYECTO_PLANIFICACION}"
+              ?active=${this._page === PAGE_PROYECTO_PLANIFICACION}
+            ></view-proyecto-planificacion>
+            <view-proyecto-search
+              name="${PAGE_PROYECTO_SEARCH}"
+              ?active=${this._page === PAGE_PROYECTO_SEARCH}
+            ></view-proyecto-search>
+            <view-proyecto-status
+              name="${PAGE_PROYECTO_STATUS}"
+              ?active=${this._page === PAGE_PROYECTO_STATUS}
+            ></view-proyecto-status>
+            <view-registro
+              name="${PAGE_REGISTRO}"
+              ?active=${this._page === PAGE_REGISTRO}
+            ></view-registro>
+            <view-registro-areas
+              name="${PAGE_REGISTRO_AREAS}"
+              ?active=${this._page === PAGE_REGISTRO_AREAS}
+            ></view-registro-areas>
+            <view-registro-confirm
+              name="${PAGE_REGISTRO_CONFIRM}"
+              ?active=${this._page === PAGE_REGISTRO_CONFIRM}
+            ></view-registro-confirm>
+            <view-registro-profile
+              name="${PAGE_REGISTRO_PROFILE}"
+              ?active=${this._page === PAGE_REGISTRO_PROFILE}
+            ></view-registro-profile>
+            <view-users
+              name="${PAGE_USERS}"
+              ?active=${this._page === PAGE_USERS}
+            ></view-users>
             <view-404
               name="${CRCA_URL_PAGE_404}"
               ?active=${this._page === CRCA_URL_PAGE_404}

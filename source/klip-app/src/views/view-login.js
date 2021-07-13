@@ -1,150 +1,130 @@
-/* eslint-disable class-methods-use-this */
 import { html, css } from 'lit-element';
-import { CrcaStaticStore } from '@ascenso/crca-redux-store';
-import { crcaLoadingElementExistProccessSelector } from '@ascenso/crca-redux-loading/redux';
+import { PageViewElement } from './page-view-element';
 
-import { PageViewElement } from './page-view-element.js';
-
-import { logout, userConnect } from '../redux/actions/user-actions.js';
-import { loggedInSelector } from '../redux/selectors/app-selectors.js';
-
-import '@material/mwc-textfield';
-import '@material/mwc-button';
-
-import { TAG_USER_LOGIN } from '../config/processTag.js';
-
-import '@ascenso/crca-redux-loading/crca-redux-loading';
-import { web3SuccessSelector } from '../redux/selectors/app-selectors.js';
-import { connect } from 'pwa-helpers/connect-mixin';
-
-class ViewLogin extends connect(CrcaStaticStore.store)(PageViewElement) {
+class ViewLogin extends PageViewElement {
   static get styles() {
-    return [
-      ...super.styles,
-      css`
-        :host {
-          display: flex;
-          padding: 10px 0;
-          background-color: rgb(19, 114, 184);
-          width: 100%;
-        }
-        h1 {
-          text-align: center;
-        }
-        header {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 50vw;
-        }
-        main {
-          display: flex;
-          flex-direction: column;
-        }
-        mwc-textfield {
-          margin-bottom: 20px;
-        }
-
-        .xl {
-          font-size: 2.4em;
-          font-weight: 700;
-        }
-        .m-top {
-          margin-top: 30px;
-        }
-        .container {
-          display: column;
-          border-radius: 25px;
-          background-color: #fff;
-          max-width: min-content;
-          margin: 30px auto;
-          width: 80vw;
-          margin: 40px auto;
-          padding: 40px;
-        }
-        img {
-          width: 150px;
-        }
-      `,
-    ];
+    return css`
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 14px;
+      }
+      .v6_3167 {
+        width: 375px;
+        height: 812px;
+        background: rgba(0, 126, 255, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+      }
+      .v14_4093 {
+        width: 258px;
+        height: 161px;
+        background: url('assets/img/v14_4093.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 266px;
+        left: 71px;
+        overflow: hidden;
+      }
+      .v7_3642 {
+        width: 75px;
+        height: 125px;
+        background: linear-gradient(rgba(0, 245, 160, 1), rgba(0, 217, 245, 1));
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 0px;
+        border: 8px solid rgba(255, 255, 255, 1);
+      }
+      .v7_3643 {
+        width: 29px;
+        height: 129px;
+        background: linear-gradient(rgba(0, 245, 160, 1), rgba(0, 217, 245, 1));
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 9px;
+        border: 8px solid rgba(255, 255, 255, 1);
+      }
+      .v7_3644 {
+        width: 18px;
+        height: 80px;
+        background: linear-gradient(rgba(0, 245, 160, 1), rgba(0, 217, 245, 1));
+        opacity: 1;
+        position: absolute;
+        top: 47px;
+        left: 34px;
+        border: 8px solid rgba(255, 255, 255, 1);
+      }
+      .v7_3645 {
+        width: 5px;
+        height: 7px;
+        background: linear-gradient(rgba(0, 245, 160, 1), rgba(0, 217, 245, 1));
+        opacity: 1;
+        position: absolute;
+        top: 16px;
+        left: 46px;
+        border: 8px solid rgba(255, 255, 255, 1);
+      }
+      .v7_3646 {
+        width: 81px;
+        height: 112px;
+        background: linear-gradient(rgba(0, 245, 160, 1), rgba(0, 217, 245, 1));
+        opacity: 1;
+        position: absolute;
+        top: 49px;
+        left: 77px;
+        border: 8px solid rgba(255, 255, 255, 1);
+      }
+      .v14_4095 {
+        width: 168px;
+        height: 154px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 52px;
+        left: 92px;
+      }
+      .name {
+        color: #fff;
+      }
+      .name {
+        color: #fff;
+      }
+    `;
   }
 
   static get properties() {
-    return {
-      _loggedIn: { type: Boolean },
-      _loading: { type: Boolean },
-      _web3Success: { type: Boolean },
-    };
+    return {};
   }
 
-  stateChanged(state) {
-    this._loggedIn = loggedInSelector(state);
-    this._loading = crcaLoadingElementExistProccessSelector(
-      state,
-      TAG_USER_LOGIN
-    );
-    this._web3Success = web3SuccessSelector(state);
+  constructor() {
+    super();
   }
 
   render() {
-    console.log('RENDER');
     return html`
-      <div class="container">
-        <header>
-          <img
-            id="logo-klip"
-            class="logo"
-            src="assets/img/klip_logo.png"
-            alt="Logo Klip"
-          />
-        </header>
-        ${this._loggedIn ? this.logoutTemplate : this.loginTemplate}
+      <div class="v6_3167">
+        <div class="v14_4093">
+          <img src="assets/img/klip_logo.svg" />
+          <div class="v7_3642"></div>
+          <div class="v7_3643"></div>
+          <div class="v7_3644"></div>
+          <div class="v7_3645"></div>
+          <div class="v7_3646"></div>
+        </div>
+        <div class="v14_4095"></div>
+        <div class="name"></div>
+        <div class="name"></div>
       </div>
     `;
-  }
-
-  get loginTemplate() {
-    return html`
-      <main>
-        <div>
-          <h1 class="xl">Bienvenido a Klip</h1>
-          <h3>
-            Aplicación descentralizada para el apoyo de la inversión social
-          </h3>
-        </div>
-        <div>
-          <p>
-            Para acceder a la información de los proyectos y tu cuenta conecta
-            tu billetera MetaMask.
-          </p>
-          <mwc-button
-            raised
-            class="m-top"
-            @click="${this._connect}"
-            ?disabled=${!this._web3Success}
-          >
-            Conectar a Metamask
-          </mwc-button>
-        </div>
-      </main>
-    `;
-  }
-
-  get logoutTemplate() {
-    return html`
-      <div>
-        <h2>Logout</h2>
-      </div>
-      <dile-button @click="${this.logout}">Cerrar sesión</dile-button>
-    `;
-  }
-
-  _connect() {
-    CrcaStaticStore.store.dispatch(userConnect(this.userData));
-  }
-
-  logout() {
-    CrcaStaticStore.store.dispatch(logout());
   }
 }
 
