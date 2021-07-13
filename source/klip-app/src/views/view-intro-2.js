@@ -52,7 +52,7 @@ class ViewIntro2 extends PageViewElement {
       }
       .v14_3975 {
         width: 327px;
-        height: 120px;
+        height: 140px;
         background: url('assets/img/v14_3975.png');
         background-repeat: no-repeat;
         background-position: center center;
